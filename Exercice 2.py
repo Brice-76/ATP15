@@ -1,4 +1,5 @@
 from PySide2.QtWidgets import QMainWindow, QLabel, QPushButton, QVBoxLayout, QTableWidget, QApplication,QWidget, QHBoxLayout, QTextEdit,QHeaderView,QDialog
+from Exercice_1 import *
 
 class LabeledTextField(QWidget) :
     def __init__(self,txt):
@@ -30,8 +31,12 @@ class ConfigurationDialog(QDialog) :
         self.setLayout(self.__layout)
 
 
+
+
 if __name__ == "__main__":
    app = QApplication([])
    win = ConfigurationDialog()
    win.show()
+   window=Mainwindow()
+   window.show()
    app.exec_()

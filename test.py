@@ -6,7 +6,6 @@ class Mainwindow(QMainWindow) :
         QMainWindow.__init__(self)
         self.setMinimumSize(600,400)
         self.setWindowTitle('IHM')
-        push=self.
 
         layout_principal=QVBoxLayout()
         self.setLayout(layout_principal)
